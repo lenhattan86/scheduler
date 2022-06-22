@@ -347,6 +347,6 @@ public class HttpOfferSetImplTest extends EasyMockTest {
         1,
         true);
     sortedOffers = httpOfferSet.getOrdered(groupKey, resourceRequest);
-    assertEquals(offers.size() - 1, Iterables.size(sortedOffers));
+    assertEquals(offers.size(), Iterables.size(sortedOffers));
   }
 }
